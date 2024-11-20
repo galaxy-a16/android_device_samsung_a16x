@@ -12,7 +12,7 @@
         manifest.xml
         manifest_gnss_aidl.xml
 -->
-<manifest version="5.0" type="device" target-level="7">
+<manifest version="4.0" type="device" target-level="7">
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
