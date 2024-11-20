@@ -12,7 +12,7 @@
 ```
  - Clone TheNoobDevs-Staging twrp tree
 ```
-    git clone https://github.com/TND-STAGING/android_device_samsung_a16x.git -b twrp-11 device/samsung/a16x
+    git clone https://github.com/galaxy-a16/android_device_samsung_a16x.git -b twrp-11 device/samsung/a16x
 ```
  - Build
 ```
