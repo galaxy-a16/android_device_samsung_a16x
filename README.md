@@ -2,7 +2,7 @@
 
 # How-to compile it:
 
-- twrp-11 Manifest
+- twrp-12.1 Manifest
 ```
     repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1
 ```
@@ -12,7 +12,7 @@
 ```
  - Clone TheNoobDevs-Staging twrp tree
 ```
-    git clone https://github.com/TND-STAGING/android_device_samsung_a16x.git -b twrp-12.1 device/samsung/a16x
+    git clone https://github.com/TND-STAGING/android_device_samsung_a16x.git -b android-14 device/samsung/a16x
 ```
  - Build
 ```
