@@ -106,8 +106,8 @@ BOARD_ROOT_EXTRA_FOLDERS := \
 	spu \
 	system_ext \
 	vendor_dlkm \
-  keydata \
-  keyrefuge
+        keydata \
+        keyrefuge
 
 # Recovery
 RECOVERY_SDCARD_ON_DATA := true
@@ -165,7 +165,7 @@ TWRP_EVENT_LOGGING := true
 
 # Properties
 #TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-#TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Treble
 PRODUCT_ENFORCE_VINTF_MANIFEST := true
