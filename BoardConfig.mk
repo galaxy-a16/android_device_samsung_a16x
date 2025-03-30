@@ -60,6 +60,12 @@ BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_CMDLINE := bootconfig buildtime_bootconfig=enable loop.max_part=7 androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 4096
 
+# Kernel - prebuilt
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
+
 # mkbootimg
 BOARD_MKBOOTIMG_ARGS:= \
 --board=SRPXF20A002 \
@@ -69,12 +75,6 @@ BOARD_MKBOOTIMG_ARGS:= \
 --tags_offset=0x00000000 \
 --header_version=$(BOARD_BOOTIMG_HEADER_VERSION) \
 --dtb=$(TARGET_PREBUILT_DTB)
-
-# Kernel - prebuilt
-TARGET_FORCE_PREBUILT_KERNEL := true
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
